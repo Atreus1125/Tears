@@ -2,17 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.tears">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
-            android:requestLegacyExternalStorage="true"
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/icon"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:requestLegacyExternalStorage="true"
+            android:roundIcon="@mipmap/icon"
             android:supportsRtl="true"
             android:theme="@style/Theme.Tears">
+        <activity android:name=".HelpActivity"/>
+        <activity android:name=".VipListActivity"/>
+        <activity android:name=".PlayActivity"/>
+        <activity android:name=".ListActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
